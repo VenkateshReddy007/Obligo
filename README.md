@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/FastAPI-0.104-009688?logo=fastapi" alt="FastAPI" />
   <img src="https://img.shields.io/badge/LangGraph-Orchestration-blue?logo=langchain" alt="LangGraph" />
   <img src="https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Groq-LLM-orange?logo=ai" alt="Groq" />
+  <img src="https://img.shields.io/badge/OpenRouter-Gemma_4-orange?logo=google" alt="OpenRouter" />
   <img src="https://img.shields.io/badge/ChromaDB-RAG-green" alt="ChromaDB" />
   <img src="https://img.shields.io/badge/D3.js-Graph-f9a825?logo=d3.js" alt="D3.js" />
 </p>

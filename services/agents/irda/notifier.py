@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 
 from services.api.database import Business, ComplianceAlert
-from services.knowledge.rag.groq_client import GroqComplianceClient
+from services.knowledge.rag.openrouter_client import OpenRouterComplianceClient
 
 
 class DeltaNotifier:
@@ -23,7 +23,7 @@ class DeltaNotifier:
         delta_id: str,
         db_session,
     ) -> int:
-        client = GroqComplianceClient()
+        client = OpenRouterComplianceClient()
         created = 0
         for business_id in affected_business_ids:
             business = await db_session.get(Business, business_id)

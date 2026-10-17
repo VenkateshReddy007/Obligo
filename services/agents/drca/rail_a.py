@@ -1,5 +1,5 @@
 from services.knowledge.obligation_graph.graph_builder import ObligationGraphBuilder
-from services.knowledge.rag.groq_client import GroqComplianceClient, SYSTEM_PROMPT
+from services.knowledge.rag.openrouter_client import OpenRouterComplianceClient, SYSTEM_PROMPT
 
 import logging
 
@@ -10,7 +10,7 @@ class RailA:
     def __init__(self) -> None:
         self.graph_builder = ObligationGraphBuilder()
         self.graph_builder.build_graph()
-        self.llm = GroqComplianceClient()
+        self.llm = OpenRouterComplianceClient()
 
     def compute_rail_a_confidence(self, retrieved_docs: list, query: str) -> float:
         if not retrieved_docs:

@@ -107,7 +107,7 @@ export default function AssistantPage() {
 
         <div className="text-[10px] font-mono text-white/20 space-y-0.5">
           <div>Messages: {messages.length}</div>
-          <div>Model: Groq LLaMA + DRCA</div>
+          <div>Model: Gemma 4 (OpenRouter) + DRCA</div>
           <div>RAG: ChromaDB</div>
         </div>
       </Card>

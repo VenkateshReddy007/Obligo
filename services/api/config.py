@@ -2,8 +2,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    groq_api_key: str = ""
-    groq_model: str = "llama-3.3-70b-versatile"
+    openrouter_api_key: str = ""
+    openrouter_model: str = "google/gemma-4-31b-it"
+    openrouter_base_url: str = "https://openrouter.ai/api/v1"
 
     database_url: str = "postgresql+asyncpg://rguser:rgpass123@localhost:5432/regraph"
     sync_database_url: str = "postgresql://rguser:rgpass123@localhost:5432/regraph"
